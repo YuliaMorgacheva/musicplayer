@@ -6,17 +6,19 @@
   box-sizing: border-box;
 }
 .header {
-  width: 1440px;
+  width: 100%;
   height: 124px;
-  background-color: black;
+  background-color: #000000;
   color: white;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
 }
 .nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-  padding-left: 100px;
+  width: 1440px;
   padding-top: 60px;
+  padding-left: 350px;
 }
 .nav_list {
   display: flex;
@@ -43,10 +45,12 @@
 
 .banner_block {
   display: flex;
-  width: 1440px;
-  height: 900px;
+  width: 100%;
+  height: 1024px;
   background-color: black;
   color: white;
+  justify-content: center;
+  padding-top: 124px;
 }
 .page1_title {
   width: 412px;
@@ -72,16 +76,17 @@
 .header_img {
   margin-left: 300px;
 }
-#kabel {
-  margin-top: 20px;
-  margin-left: -63%;
-}
 .music {
-  width: 1440px;
+  width: 100%;
   height: 1024px;
   background: rgb(213, 48, 5);
   color: white;
   padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.music_div {
+  width: 1440px;
 }
 .page2_title {
   font-family: Karla;
@@ -117,17 +122,109 @@
     rgb(243, 80, 26) 100%
   );
   margin-top: 150px;
+  cursor: pointer;
+}
+.music_button2 {
+  color: rgb(255, 255, 255);
+  font-family: Karla;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 47px;
+  width: 382px;
+  height: 83px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: -4px -4px 30px 0px rgba(255, 255, 255, 0.1),
+    4px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+    to right,
+    rgb(177, 62, 24),
+    rgb(243, 80, 26) 100%
+  );
+  margin-top: 150px;
+  cursor: pointer;
+}
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  display: none;
+  cursor: pointer;
+}
+.modalopen {
+  position: fixed;
+  inset: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  display: flex;
+  cursor: pointer;
+}
+.modal_main {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  background-color: rgb(243, 80, 26);
+  margin: auto;
+  color: #000000;
+  border-radius: 15px;
+  padding: 30px;
+  cursor: default;
+  border: 2px solid black;
+}
+.modal_title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: "Istok Web", sans-serif;
+  font-size: 40px;
+}
+.modal_input {
+  border: none;
+  width: 700px;
+  font-size: 30px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 15px;
+}
+.modal_searchBtn {
+  color: white;
+  background-color: #000000;
+  border: none;
+  width: 300px;
+  font-size: 30px;
+  margin: 50px auto auto auto;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 15px;
+  cursor: pointer;
+}
+.modal_close {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 .page3 {
-  width: 1440px;
+  width: 100%;
   height: 1024px;
   background: linear-gradient(180deg, rgb(213, 48, 5), rgb(0, 0, 0) 6.037%);
   color: white;
   display: flex;
-  overflow: auto;
+  justify-content: center;
+  padding-top: 100px;
+}
+.page3_div {
+  width: 1440px;
+  height: 1024px;
+  display: flex;
 }
 .page3_title {
-  padding: 150px 0 0 100px;
+  padding-left: 100px;
   font-size: 30px;
   font-weight: 400;
   line-height: 35px;
@@ -139,14 +236,20 @@
   font-size: 30px;
   font-weight: 400;
   line-height: 35px;
-  margin: auto 0 auto 0;
+  display: flex;
+  align-items: center;
   font-family: Karla;
 }
 .page4 {
-  width: 1440px;
+  width: 100%;
   height: 1024px;
   background: rgb(213, 48, 5);
   color: white;
+  display: flex;
+  justify-content: center;
+}
+.page4_div {
+  width: 1440px;
 }
 .page4_title {
   padding: 83px 0 0 100px;
@@ -189,8 +292,12 @@
     4px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background: rgb(227, 227, 227);
 }
+
 .page4_button2:active {
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.page4_list2 {
+  list-style: none;
 }
 .page4_text1 {
   font-family: "Montserrat", sans-serif;
@@ -223,14 +330,19 @@
 }
 .page4_img {
   position: absolute;
-  left: 336px;
+  left: 800px;
   margin-top: -500px;
 }
 .footer {
-  width: 1440px;
+  width: 100%;
   height: 536px;
   background: linear-gradient(180deg, rgb(213, 48, 5), rgb(0, 0, 0) 4.015%);
   color: white;
+  display: flex;
+  justify-content: center;
+}
+.footer_div {
+  width: 1440px;
 }
 .footer_div1 {
   display: flex;

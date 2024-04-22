@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Karla:ital,wght@0,200..800;1,200..800&family=Kenia&family=Libre+Barcode+128+Text&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="/main.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -45,98 +46,112 @@
         </div>
       </div>
       <div class="music">
-        <h1 class="page2_title" id="page2_title">Music</h1>
-        <div class="page2">
-          <ul class="list_button">
-            <li>
-              <button
-                type="button"
-                class="music_button"
-                onclick="window.location.href='#page4_title'"
-              >
-                Listen now
-              </button>
-            </li>
-            <li>
-              <button
-                type="button"
-                class="music_button"
-                onclick="window.location.href='#page4_title'"
-              >
-                Find a song...
-              </button>
-            </li>
-          </ul>
-          <div class="page2_img">
-            <img src="images/seyi-ariyo-6YgYRcyQK_s-unsplash-PhotoRoom 1.png" />
+        <div class="music_div">
+          <h1 class="page2_title" id="page2_title">Music</h1>
+          <div class="page2">
+            <ul class="list_button">
+              <li>
+                <button type="button" class="music_button">Listen now</button>
+              </li>
+              <li>
+                <button type="button" class="music_button2">
+                  Find a song...
+                </button>
+              </li>
+            </ul>
+            <div class="page2_img">
+              <img
+                src="images/seyi-ariyo-6YgYRcyQK_s-unsplash-PhotoRoom 1.png"
+              />
+            </div>
           </div>
         </div>
       </div>
+      <div class="overlay">
+        <div class="modal_main">
+          <h2 class="modal_title">Listen now</h2>
+          <input
+            type="search"
+            class="modal_input"
+            placeholder="Track, album, artist..."
+          />
+          <button type="button" class="modal_searchBtn">Search</button>
+          <button type="button" class="modal_close">&#10006;</button>
+        </div>
+      </div>
       <div class="page3">
-        <h2 class="page3_title" id="page3_title">About</h2>
-        <p class="page3_text">
-          MusicPlayer gives you instant access to millions of songs – from old
-          favorites to the latest hits. Just hit play to stream anything you
-          like.
-        </p>
+        <div class="page3_div">
+          <h2 class="page3_title" id="page3_title">About</h2>
+          <p class="page3_text">
+            MusicPlayer gives you instant access to millions of songs – from old
+            favorites to the latest hits. Just hit play to stream anything you
+            like.
+          </p>
+        </div>
       </div>
       <div class="page4">
-        <h2 class="page4_title" id="page4_title">Store</h2>
-        <ul class="page4_list1">
-          <li>
-            <button type="button" class="page4_button1">
-              Download <br />Windows x64
-            </button>
-          </li>
-          <li>
-            <button type="button" class="page4_button2">Download MacOS</button>
-          </li>
-        </ul>
-        <ul class="page4_list2">
-          <li class="page4_text1">Нужна предыдущая версия MPlayer?</li>
-          <li class="page4_text2">
-            Вы можете скачать одну из предыдущих версий MPlayer, которая
-            совместима с нужной вам версией операционной системы и определёнными
-            устройствами.
-          </li>
-          <li class="page4_text3">
-            <a href="#" class="page4_text3_link"
-              >Выберите предыдущую версию MPlayer</a
-            >
-          </li>
-        </ul>
-        <div class="page4_img">
-          <img src="images/Device - Macbook Pro.png" alt="..." />
+        <div class="page4_div">
+          <h2 class="page4_title" id="page4_title">Store</h2>
+          <ul class="page4_list1">
+            <li>
+              <button type="button" class="page4_button1">
+                Download <br />Windows x64
+              </button>
+            </li>
+            <li>
+              <button type="button" class="page4_button2">
+                Download MacOS
+              </button>
+            </li>
+          </ul>
+          <ul class="page4_list2">
+            <li class="page4_text1">Нужна предыдущая версия MPlayer?</li>
+            <li class="page4_text2">
+              Вы можете скачать одну из предыдущих версий MPlayer, которая
+              совместима с нужной вам версией операционной системы и
+              определёнными устройствами.
+            </li>
+            <li class="page4_text3">
+              <a href="#" class="page4_text3_link"
+                >Выберите предыдущую версию MPlayer</a
+              >
+            </li>
+          </ul>
+          <div class="page4_img">
+            <img src="images/Device - Macbook Pro.png" alt="..." />
+          </div>
         </div>
       </div>
     </main>
     <footer class="footer">
-      <div class="footer_div1">
-        <ul class="footer_list1">
-          <li class="footer_list1_title">MPlayer Store</li>
-          <li>Варианты оплаты</li>
-          <li>Состояние заказа</li>
-          <li>Помощь при покупке</li>
-        </ul>
-        <ul class="footer_list2">
-          <li class="footer_list2_title">Ценности MPlayer</li>
-          <li>Универсальный доступ</li>
-          <li>Окружающая среда</li>
-          <li>Конфиденциальность</li>
-        </ul>
-        <ul class="footer_list3">
-          <li class="footer_list3_title">Учётная запись</li>
-          <li>Управление вашим MPlayer ID</li>
-          <li>Учётная запись MPlayer Store</li>
+      <div class="footer_div">
+        <div class="footer_div1">
+          <ul class="footer_list1">
+            <li class="footer_list1_title">MPlayer Store</li>
+            <li>Варианты оплаты</li>
+            <li>Состояние заказа</li>
+            <li>Помощь при покупке</li>
+          </ul>
+          <ul class="footer_list2">
+            <li class="footer_list2_title">Ценности MPlayer</li>
+            <li>Универсальный доступ</li>
+            <li>Окружающая среда</li>
+            <li>Конфиденциальность</li>
+          </ul>
+          <ul class="footer_list3">
+            <li class="footer_list3_title">Учётная запись</li>
+            <li>Управление вашим MPlayer ID</li>
+            <li>Учётная запись MPlayer Store</li>
+          </ul>
+        </div>
+        <p class="footer_title">MUSIC PLAYER</p>
+        <ul class="footer_list4">
+          <li>© MPlayer Inc., 2022 г. Все права защищены.</li>
+          <li>Условия использования</li>
+          <li>Продажа и возврат</li>
+          <li>Юридическая информация</li>
         </ul>
       </div>
-      <p class="footer_title">MUSIC PLAYER</p>
-      <ul class="footer_list4">
-        <li>© MPlayer Inc., 2022 г. Все права защищены.</li>
-        <li>Условия использования</li>
-        <li>Продажа и возврат</li>
-        <li>Юридическая информация</li>
-      </ul>
     </footer>
   </body>
 </html>
